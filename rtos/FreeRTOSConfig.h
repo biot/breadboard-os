@@ -110,12 +110,12 @@
 */
 
 /* SMP port only */
-#define configNUM_CORES                         2
+#define configNUM_CORES                         1
 #define configTICK_CORE                         1
 #define configRUN_MULTIPLE_PRIORITIES           1
 
 /* RP2040 specific */
-#define configSUPPORT_PICO_SYNC_INTEROP         1
+#define configSUPPORT_PICO_SYNC_INTEROP         0
 #define configSUPPORT_PICO_TIME_INTEROP         1
 #define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS() // if a specific timer init needs to be called before runtime stats it should go here
 extern uint64_t get_time_us(void);               // defined in hw_clocks.c
